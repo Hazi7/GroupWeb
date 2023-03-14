@@ -1,0 +1,472 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	scroll-behavior: smooth;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	max-width: 100%;
+}
+
+#logo {
+	transform: scale(0.65);
+}
+
+
+
+.group-name {
+	display: none;
+}
+
+.learn-more-box {
+	height: 50px;
+	width: 150px;
+	display: flex;
+	top: initial;
+	right: initial;
+	
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+	position: absolute;
+	top: 200px;
+	z-index: 99;
+}
+
+.learn-more-box:hover {
+	cursor: pointer;
+	background-color: #000000;
+}
+
+.learn-more-word {
+	color: white;
+	font-size: 12px;
+	
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	flex-basis: 60%;
+	max-width: 1600px;
+	min-height: 2px;
+
+}
+
+.nav-item {
+	display: none;
+}
+
+.nav-item-fly {
+	text-decoration: none;
+	color: #666666;
+	display: flex;
+	flex-basis: 60%;
+	max-width: 1600px;
+	
+}
+
+.nav-item:hover {
+	cursor: pointer;
+	border-style: solid;
+	border-color: cadetblue;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	
+}
+
+
+.main-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+#programming {
+	width: 100%;
+	height: auto;
+}
+
+.group-introduce-box {
+	position: absolute;
+	top: 650px;
+	width: 100%;
+	height: 1200px;
+	background-color: white;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.introduce-title {
+	position: absolute;
+	top: -50px;
+	font-size: 25px;
+	color: #083791;
+}
+
+.group-introduce{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	flex-direction: column;
+}
+
+
+.introduce-line {
+	background-color: #083791;
+	height: 3px;
+	width: 80px;
+	position: absolute;
+	top: 10px;
+}
+
+.computer {
+	width: 400px;
+	height: 300px;
+	position: relative;
+}
+
+.group-introduce-mask {
+	display: none;
+}
+
+#group-introduce-photo-box:hover .computer{
+	transform: scale(1.2);
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+#group-introduce-photo-box:hover{
+	cursor: pointer;
+}
+
+#group-introduce-photo-box {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.group-introduce-mask {
+	width: 400px;
+	height: 270px;
+	position: relative;
+	bottom: 275px;
+	background-color: rgba(0,0,0,0.4);
+	visibility: visible;
+	z-index: 99;
+	
+}
+
+
+
+.group-introduce-word {
+	color: #666666;
+	width: 80%;
+	margin-left: 30px;
+	position: relative;
+	top: 40px;
+	
+}
+
+.group-introduce-word:hover {
+	cursor: pointer;
+}
+
+.instruct-teacher {
+	position: absolute;
+	top: 640px;
+	font-size: 25px;
+	color: #083791;
+}
+
+.instruct-line {
+	background-color: #083791;
+	height: 3px;
+	width: 80px;
+	position: absolute;
+	top: 690px;
+}
+
+
+
+.instruct-teacher-box {
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	top: 1400px;
+	height: 900px;
+	z-index: 9;
+	background-attachment: fixed;
+	background-image: url("image/heardone.jfif");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	
+}
+
+.instruct-techaer-one {
+	background-color: white;
+	display: flex;
+	margin-right: 0px;
+	height: 370px;
+	max-width: 60%;
+	opacity: 0.95;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.instruct-teacher-two {
+	background-color: white;
+	margin-top: 40px;
+	display: flex;
+	height: 370px;
+	opacity: 0.95;
+	max-width: 60%;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.teacher-name {
+	font-size: 30px;
+}
+
+.teacher-word-one {
+	font-size: 14px;
+	max-width: 80%;
+	text-align: left;
+	
+}
+
+.teacher-word-title-one {
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.teacher-word-two {
+	font-size: 14px;
+	max-width: 82%;
+}
+
+.teacher-word-title-two {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+#teacher-photo-one {
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#teacher-photo-two {
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.project-show {
+	visibility: visible;
+	
+}
+
+.picture-show-box1 {
+	flex-direction: column;
+}
+
+.picture-show-box2 {
+	flex-direction: column;
+	margin-right: 0px;
+}
+
+.project-show {
+	top: 2400px;
+}
+
+.instruct-techaer-one-word-limit {
+	max-width: 100%;
+}
+
+.group-spirit-title {
+	top: 900px;
+	font-size: 20px;
+}
+
+.group-spirit-line {
+	height: 3px;
+}
+
+.group-spirit-box {
+	visibility: visible;
+}
+
+.group-spirit-box {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 3400px;
+	z-index: 99;
+}
+.group-spirit-one {
+	flex: 0;
+	width: 300px;
+	height: 300px;
+	margin-left: 0;
+	margin-bottom: 50px;
+
+}
+.group-news-title {
+	font-size: 25px;
+	top: 100px;
+}
+
+.group-news-line {
+	height: 3px;
+	top: 140;
+}
+
+.group-spirit-two {
+	flex: 0;
+	width: 300px;
+	height: 200px;
+	margin-left: 150px;
+}
+
+.group-news-box {
+	visibility: visible;
+	z-index: 99;
+	top: 3950px;
+}
+
+.picture-box1 {
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.picture-box2 {
+	flex-direction: column;
+	align-items: center;
+}
+
+.picture-box-son1 {
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+
+.mask-box1 {
+	display: none;
+}
+
+.mask-box2 {
+	display: none;
+}
+
+.mask-box3 {
+	display: none;
+}
+
+.mask-box4 {
+	display: none;
+}
+
+.group-news-word1 {
+	display: none;
+}
+
+.group-news-word2 {
+	display: none;
+}
+
+.group-news-word3 {
+	display: none;
+}
+
+.group-news-word4 {
+	display: none;
+}
+
+
+.picture-box-son3 {
+	margin-top: 20px;
+}
+
+.picture-box-son4 {
+	margin-left: 0;
+	margin-top: 20px;
+	margin-right: 0px;
+}
+
+.vive-more-button {
+	height: 30px;
+	top: 1050px;
+}
+
+.footer {
+	visibility: visible;
+	flex-direction: column;
+	align-items: center;
+	top: 5100px;
+}
+
+.flow-us {
+	position: absolute;
+	top: 0px;
+}
+
+.copy-right {
+	display: none;
+}
+
+#baidu-box {
+	position: absolute;
+	top: 190px;
+	left: 25%;
+}
+
+.flow-us-title {
+	display: none;
+}
+
+#logo-footer {
+	display: none;
+}
+
+
+
+
+
+
+
